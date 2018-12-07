@@ -1,4 +1,4 @@
-class AddTextToBibaObjects < ActiveRecord::Migration[5.0]
+class AddTextToBibaObjects < ActiveRecord::Migration
   def change
     add_column :biba_objects, :text, :text
   end

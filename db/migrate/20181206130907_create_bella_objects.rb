@@ -1,4 +1,4 @@
-class CreateBellaObjects < ActiveRecord::Migration[5.0]
+class CreateBellaObjects < ActiveRecord::Migration
   def change
     create_table :bella_objects do |t|
       t.integer :conf_level
