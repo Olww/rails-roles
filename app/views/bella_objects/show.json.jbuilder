@@ -1,0 +1,1 @@
+json.partial! "bella_objects/bella_object", bella_object: @bella_object

@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Conf level:</strong>
+  <%= @bella_object.conf_level %>
+  <strong>Text:</strong>
+  <%= @bella_object.text %>
+</p>
+
+<%= link_to 'Edit', edit_bella_object_path(@bella_object) if @bella_object.writable_by?(current_user) %> |
+<%= link_to 'Back', bella_objects_path %>

@@ -1,0 +1,22 @@
+<%= form_for(bella_object) do |f| %>
+  <% if bella_object.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bella_object.errors.count, "error") %> prohibited this bella_object from being saved:</h2>
+
+      <ul>
+      <% bella_object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :conf_level %>
+    <%= f.select(:conf_level, BellaObject.conf_levels.keys.map {|conf_level| [conf_level.titleize,conf_level]}) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit :class => "btn btn-dark btn-sm"%>
+  </div>
+<% end %>

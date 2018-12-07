@@ -1,0 +1,1 @@
+json.partial! "biba_objects/biba_object", biba_object: @biba_object

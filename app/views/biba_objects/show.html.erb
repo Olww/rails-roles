@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Conf level:</strong>
+  <%= @biba_object.conf_level %>
+  <strong>Text:</strong>
+  <%= @biba_object.text %>
+</p>
+
+<%= link_to 'Edit', edit_biba_object_path(@biba_object) if @biba_object.writable_by?(current_user) %> |
+<%= link_to 'Back', biba_objects_path %>

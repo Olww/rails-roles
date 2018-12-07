@@ -1,0 +1,1 @@
+json.array! @biba_objects, partial: 'biba_objects/biba_object', as: :biba_object

@@ -1,0 +1,6 @@
+<h1>Editing Bella Object</h1>
+
+<%= render 'edit_form', bella_object: @bella_object %>
+
+<%= link_to 'Show', @bella_object if @bella_object.readable_by?(current_user) %> |
+<%= link_to 'Back', bella_objects_path %>

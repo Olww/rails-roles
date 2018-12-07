@@ -1,0 +1,6 @@
+<h1>Editing Biba Object</h1>
+
+<%= render 'edit_form', biba_object: @biba_object %>
+
+<%= link_to 'Show', @biba_object if @biba_object.readable_by?(current_user) %> |
+<%= link_to 'Back', biba_objects_path %>

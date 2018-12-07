@@ -1,0 +1,141 @@
+graph RGL__AdjacencyGraph {
+    1 [
+        fontsize = 8,
+        label = 1
+    ]
+
+    2 [
+        fontsize = 8,
+        label = 2
+    ]
+
+    3 [
+        fontsize = 8,
+        label = 3
+    ]
+
+    5 [
+        fontsize = 8,
+        label = 5
+    ]
+
+    6 [
+        fontsize = 8,
+        label = 6
+    ]
+
+    10 [
+        fontsize = 8,
+        label = 10
+    ]
+
+    9 [
+        fontsize = 8,
+        label = 9
+    ]
+
+    15 [
+        fontsize = 8,
+        label = 15
+    ]
+
+    18 [
+        fontsize = 8,
+        label = 18
+    ]
+
+    30 [
+        fontsize = 8,
+        label = 30
+    ]
+
+    45 [
+        fontsize = 8,
+        label = 45
+    ]
+
+    90 [
+        fontsize = 8,
+        label = 90
+    ]
+
+    1 -- 2 [
+        fontsize = 8
+    ]
+
+    1 -- 3 [
+        fontsize = 8
+    ]
+
+    1 -- 5 [
+        fontsize = 8
+    ]
+
+    2 -- 6 [
+        fontsize = 8
+    ]
+
+    2 -- 10 [
+        fontsize = 8
+    ]
+
+    3 -- 6 [
+        fontsize = 8
+    ]
+
+    3 -- 9 [
+        fontsize = 8
+    ]
+
+    3 -- 15 [
+        fontsize = 8
+    ]
+
+    5 -- 10 [
+        fontsize = 8
+    ]
+
+    5 -- 15 [
+        fontsize = 8
+    ]
+
+    6 -- 18 [
+        fontsize = 8
+    ]
+
+    6 -- 30 [
+        fontsize = 8
+    ]
+
+    10 -- 30 [
+        fontsize = 8
+    ]
+
+    9 -- 18 [
+        fontsize = 8
+    ]
+
+    9 -- 45 [
+        fontsize = 8
+    ]
+
+    15 -- 45 [
+        fontsize = 8
+    ]
+
+    15 -- 30 [
+        fontsize = 8
+    ]
+
+    18 -- 90 [
+        fontsize = 8
+    ]
+
+    30 -- 90 [
+        fontsize = 8
+    ]
+
+    45 -- 90 [
+        fontsize = 8
+    ]
+}

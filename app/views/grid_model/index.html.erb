@@ -1,0 +1,20 @@
+<h1>Grid model:</h1>
+<%= form_tag(controller: "grid_model", action: "check", method: "post") do %>
+  <div class="field">
+    <%= label_tag(:subject_level, "Subject level:") %>
+    <%= number_field_tag(:subject_level) %>
+  </div>
+  <div class="field">
+    <%= label_tag(:object_level, "Object level:") %>
+    <%= number_field_tag(:object_level) %>
+  </div>
+  <div class="actions">
+    <%= submit_tag("Check!", :class => "btn btn-dark btn-sm") %>
+  </div>
+<% end %>
+<a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  Show graph
+</a>
+<div class="collapse" id="collapseExample">
+  <p><%= image_tag("/graph.jpg", :alt => "Not graph :(") %></p>
+</div>

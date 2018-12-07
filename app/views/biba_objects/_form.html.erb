@@ -1,0 +1,22 @@
+<%= form_for(biba_object) do |f| %>
+  <% if biba_object.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(biba_object.errors.count, "error") %> prohibited this biba_object from being saved:</h2>
+
+      <ul>
+      <% biba_object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :conf_level %>
+    <%= f.select(:conf_level, BibaObject.conf_levels.keys.map {|conf_level| [conf_level.titleize,conf_level]}) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit :class => "btn btn-dark btn-sm"%>
+  </div>
+<% end %>
