@@ -53,7 +53,7 @@ class GridModelController < ApplicationController
   end
 
   def write_graph
-    @graph.to_undirected.write_to_graphic_file('jpg', "#{Rails.application.public_path}/graph")
+    @graph.to_undirected.write_to_graphic_file('jpg', Rails.root.join("public", "/graph").to_s)
     # @graph.write_to_graphic_file('jpg')
   end
 
