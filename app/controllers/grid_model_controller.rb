@@ -5,7 +5,7 @@ require 'rgl/dijkstra.rb'
 
 class GridModelController < ApplicationController
   before_action :authenticate_user!
-  before_action :generate_graph
+  # before_action :generate_graph
   before_action :write_graph
 
   def index
