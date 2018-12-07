@@ -9,6 +9,8 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'rgl'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
@@ -31,7 +33,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
-  gem 'rgl'
 end
 group :test do
   gem 'capybara'
